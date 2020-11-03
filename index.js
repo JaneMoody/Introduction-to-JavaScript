@@ -13,14 +13,28 @@ Task 1a - Voting Age
 
 Do the following:   
    1. Make a variable called votingAge and give it a value
+
+   let votingAge = 21;
+
+   age = 18 
+   if (votingAge => 18) => return true;
+   if (votingAge < 18) => return false;
+
    2. Return true if age is 18 or higher
 
    HINT: no function required
 */
 console.log("Task 1a");
 
-let votingAge = 21 ? "true" : "false";
-console.log(votingAge);
+let votingAge = 21;
+
+if (votingAge > 17) {
+  console.log("true");
+} else {
+  console.log("false");
+}
+
+// let votingAge = 21 ? "true" : "false";
 
 // votingAge = true || false;
 
@@ -169,16 +183,17 @@ Use the game function below to do the following:
 
 console.log("Task 4");
 
-var computer = Math.round(Math.random());
+var computer = Math.round(Math.random(3));
+var user = Math.round(Math.random(3));
 
 function game(user, computer) {
-  if (computer == 1) {
+  if (computer === 1) {
     return "scissors";
-  }
-  if (computer == 2) {
+  } else if {
+  if (computer === 2) {
     return "paper";
-  }
-  if (computer == 3) {
+  } else if {
+  if (computer === 3) {
     return "rock";
   }
 }
