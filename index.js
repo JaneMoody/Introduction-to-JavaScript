@@ -288,7 +288,7 @@ Using the annoyingSong function below do the following:
 function annoyingSong() {
   let bottles;
   let bottlesLeft;
-  for (i = 99; i >= 1; i--) {
+  for (let i = 99; i >= 1; i--) {
     if (i === 1) {
       bottles = "bottle";
       bottlesLeft = "No bottles of soda on the wall";
