@@ -281,7 +281,24 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong() {}
+function annoyingSong() {
+  let bottles;
+  let bottlesLeft;
+  for (i = 99; i >= 1; i--) {
+    if (i === 1) {
+      bottles = "bottle";
+      bottlesLeft = "No bottles of soda on the wall";
+    } else {
+      bottles = "bottles";
+      bottlesLeft = i - 1 + " bottles of soda on the wall";
+    }
+    console.log(i + "" + bottles + " of soda,");
+    console.log("Take one down and pass it around");
+    console.log(bottlesLeft);
+  }
+}
+
+console.log(annoyingSong());
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -291,16 +308,25 @@ Using the grade function below do the following:
   1. Receive a score out of 100 
   2. Return the corresponding letter grade following this grade scale:
 
-   90-100 = A 
-   80-89 = B 
-   70-79 = C 
-   60-69 =  D 
-   below 60 = F
+   90-100 = A  if (grade <= 100 && grade >= 90) { return "A"}
+   80-89 = B  if (grade <= 89 && grade >= 80) { return "B"}
+   70-79 = C if (grade <= 79 && grade >= 70) { return "C"}
+   60-69 =  D if (grade <= 69 && grade >= 60) { return "D"}
+   below 60 = F  else { return "F" }
 */
 
-function grade(/*add your code here*/) {
-  /*add your code here*/
+function grade(number) {
+  if (number <= 100 && number >= 90) {
+    return "A";
+  } else if (number <= 89 && number >= 80) {
+    return "B";
+  } else if (number <= 79 && number >= 70) {
+    return "C";
+  } else if (number <= 69 && number >= 60) {
+    return "D";
+  }
 }
+console.log(grade(76));
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
