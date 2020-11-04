@@ -183,20 +183,58 @@ Use the game function below to do the following:
 
 console.log("Task 4");
 
-var computer = Math.round(Math.random(3));
-var user = Math.round(Math.random(3));
+var user = "rock";
+var computer = Math.random();
 
-function game(user, computer) {
-  if (computer === 1) {
-    return "scissors";
-  } else if {
-  if (computer === 2) {
-    return "paper";
-  } else if {
-  if (computer === 3) {
-    return "rock";
-  }
+if (computer < 0.3) {
+  computer = "rock";
+} else if (computer <= 0.6) {
+  computer = "paper";
+} else {
+  computer = "scissors";
 }
+
+var comparison = function (choice1, choice2) {
+  if (choice1 === choice2) {
+    return "it's a tie";
+  }
+  if (choice1 === "rock") {
+    if (choice2 === "scissors") {
+      return "Rock Wins!";
+    } else {
+      return "Paper Wins!";
+    }
+  }
+
+  if (choice1 === "paper") {
+    if (choice2 === "rock") {
+      return "Paper Wins!";
+    } else {
+      return "Scissor Wins!";
+    }
+  }
+  if (choice2 === "scissors") {
+    if (choice2 === "rock") {
+      return "Rock Wins!";
+    } else {
+      return "Scissors Wins!";
+    }
+  }
+};
+
+comparison(user, computer);
+
+// function game(user, computer) {
+//   if (computer === 1) {
+//     return "scissors";
+//   } else if {
+//   if (computer === 2) {
+//     return "paper";
+//   } else if {
+//   if (computer === 3) {
+//     return "rock";
+//   }
+// }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
