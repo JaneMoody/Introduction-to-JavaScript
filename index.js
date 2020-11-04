@@ -52,12 +52,13 @@ Do the following:
 console.log("Task 1b");
 
 var name = "Jane";
-var age = 18;
+var age = 88;
 
-if (age === 18) {
+if (age != 18) {
   var name = "Cindy";
 }
-return name;
+
+console.log(name);
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -259,8 +260,11 @@ miles(7);
 /*
 Using the feet function below do the following:
   1. Receive a number of cm
+  function feet(cm)
   2. Convert the number of cm to feet
+  cm * 0.0328084
   3. Return number of feet
+  return cm *
 */
 
 console.log("Task 5b");
